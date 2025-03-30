@@ -7,145 +7,108 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.2">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 14.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 14.0px Times; -webkit-text-stroke: #000000; min-height: 18.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;2025黄金价格预测完整版&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 新增表格滚动解决方案 */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.table-container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-x: auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-overflow-scrolling: touch;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #000 30%, rgba(0,0,0,0)),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>linear-gradient(to left, #000 30%, rgba(0,0,0,0));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-repeat: no-repeat;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-size: 40px 100%, 40px 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-position: left center, right center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">/* 专业金融报告风格 */</span></p>
+<p class="p1"><span class="s1">:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--gold: #FFD700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--dark-bg: #1A1A1A;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--data-card: #2D2D2D;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.price-table {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-width: 500px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-collapse: collapse;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: var(--dark-bg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #FFF;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family: 'Roboto Condensed', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>line-height: 1.6;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.price-table th,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.price-table td {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 14px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>white-space: nowrap;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">.report-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>max-width: 1200px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 2rem;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.price-table th {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #2A2A2A;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #FFD700;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>left: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">/* 标题装饰线 */</span></p>
+<p class="p1"><span class="s1">.gold-bar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 1rem auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.month-col {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>left: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #1A1A1A;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">/* 数据卡片 */</span></p>
+<p class="p1"><span class="s1">.analysis-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: var(--data-card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 2rem 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-left: 5px solid var(--gold);</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 新增数据可视化元素 */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.peak-indicator {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #FFD700;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-right: 6px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">/* 重点数据展示 */</span></p>
+<p class="p1"><span class="s1">.highlight-box {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: rgba(255,215,0,0.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 1.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 1.5rem 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.price-table th,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.price-table td {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>padding: 12px 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>font-size: 14px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;完整月度价格预测&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;table class="price-table"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;th class="month-col"&gt;月份&lt;/th&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;th&gt;价格（元/克）&lt;/th&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;th&gt;国际金价&lt;/th&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;th&gt;波动幅度&lt;/th&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;th&gt;市场事件&lt;/th&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="month-col"&gt;1月&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="highlight"&gt;615&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;$2,850&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;-1.2%&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;美联储议息&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="month-col"&gt;2月&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;635&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;$2,900&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;+3.3%&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;中国春节需求&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="month-col"&gt;3月&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;658&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;$2,950&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;+3.6%&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;央行增储&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- 补充4-11月数据 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="month-col"&gt;12月&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="highlight"&gt;875 &lt;span class="peak-indicator"&gt;&lt;/span&gt;&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;$3,100&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;+10.2%&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td&gt;年末避险需求&lt;/td&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/table&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">.gold-text {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1">}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 新增关键数据摘要 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="data-summary"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="summary-item"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="label"&gt;年度最低&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="value"&gt;615 元/克&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="time"&gt;1月&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="summary-item"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="label"&gt;年度峰值&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="value"&gt;875 元/克&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="time"&gt;12月&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="summary-item"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="label"&gt;平均价格&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="value"&gt;746 元/克&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="time"&gt;全年&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<p class="p1"><span class="s1">/* 价格区间展示 */</span></p>
+<p class="p1"><span class="s1">.price-range {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gap: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 2rem 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #3A3A3A;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 0.8rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 1.2rem;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.badge.gold {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: linear-gradient(45deg, var(--gold), #B8860B);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* 响应式表格 */</span></p>
+<p class="p1"><span class="s1">.strategy-table {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-collapse: collapse;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 1rem 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.strategy-table th {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: rgba(255,215,0,0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align: left;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.strategy-table td {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #444;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media (max-width: 768px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.report-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.analysis-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 1.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
 </body>
 </html>
